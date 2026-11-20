@@ -6,6 +6,10 @@
 
 A 4 KB chess engine in Python: alpha-beta search, quiescence, piece-square tables. It plays the make.fun tiny-chess-01 gauntlet.
 
+## Engine
+
+Null-move pruning, late move reductions, killer moves, tapered middlegame/endgame evaluation, and check evasions in quiescence. The readable source is packed with the kit's `makefun compress` (LZMA) into a 2,942-byte `main.py`. Verified locally: practice trial-0 Elo 1279 (3 wins, 0 draws, 3 losses), max think 2.4 s per move, deterministic.
+
 ## Run it
 
 ```sh
